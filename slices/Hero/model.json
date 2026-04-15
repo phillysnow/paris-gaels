@@ -1,0 +1,78 @@
+{
+  "id": "Hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Full-viewport hero with background image and dual CTAs",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "docURL": "",
+      "version": "initial",
+      "imageUrl": "",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow"
+          }
+        },
+        "title_white": {
+          "type": "Text",
+          "config": {
+            "label": "Title (white)"
+          }
+        },
+        "title_gold": {
+          "type": "Text",
+          "config": {
+            "label": "Title (gold)"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "multi": "paragraph,strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background image",
+            "constraint": {
+              "width": 2400,
+              "height": 1600
+            }
+          }
+        },
+        "primary_cta": {
+          "type": "Link",
+          "config": {
+            "label": "Primary CTA",
+            "allowText": true,
+            "allowTargetBlank": true
+          }
+        },
+        "secondary_cta": {
+          "type": "Link",
+          "config": {
+            "label": "Secondary CTA",
+            "allowText": true,
+            "allowTargetBlank": true
+          }
+        },
+        "section_id": {
+          "type": "Text",
+          "config": {
+            "label": "Section anchor id",
+            "placeholder": "hero"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

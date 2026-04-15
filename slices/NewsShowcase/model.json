@@ -1,0 +1,85 @@
+{
+  "id": "NewsShowcase",
+  "type": "SharedSlice",
+  "name": "News showcase",
+  "description": "Club news cards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "docURL": "",
+      "version": "initial",
+      "imageUrl": "",
+      "primary": {
+        "feed": {
+          "type": "Select",
+          "config": {
+            "label": "Content source",
+            "options": ["manual", "latest_articles"],
+            "default_value": "manual"
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow"
+          }
+        },
+        "title_white": {
+          "type": "Text",
+          "config": {
+            "label": "Title (white)"
+          }
+        },
+        "title_gold": {
+          "type": "Text",
+          "config": {
+            "label": "Title (gold)"
+          }
+        },
+        "section_id": {
+          "type": "Text",
+          "config": {
+            "label": "Section anchor id",
+            "placeholder": "news"
+          }
+        }
+      },
+      "items": {
+        "category": {
+          "type": "Text",
+          "config": {
+            "label": "Category badge"
+          }
+        },
+        "date_display": {
+          "type": "Text",
+          "config": {
+            "label": "Date display"
+          }
+        },
+        "headline": {
+          "type": "Text",
+          "config": {
+            "label": "Headline"
+          }
+        },
+        "summary": {
+          "type": "Text",
+          "config": {
+            "label": "Summary"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "allowText": false,
+            "allowTargetBlank": true
+          }
+        }
+      }
+    }
+  ]
+}

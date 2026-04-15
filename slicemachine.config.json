@@ -1,0 +1,7 @@
+{
+  "libraries": ["./slices"],
+  "adapter": "@slicemachine/adapter-next",
+  "repositoryName": "paris-gaels",
+  "starter": "agentic-migration-starter",
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
+}

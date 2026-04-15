@@ -1,0 +1,7 @@
+# Field type transformations
+
+- **Primitive fields**: strings, numbers, booleans, dates, colors, etc. Map source field names and types to Prismic field names and types per `content-modeling.md`. Pay special attention to SEO/metadata fields (meta_title, meta_description, og_image) -- these exist on most page types and are commonly populated in source content.
+- **Content relationships**: use the reference resolver for all document links. Never hardcode IDs or assume documents exist in the current run.
+- **Images and assets**: use `migration.createAsset(url)` with the source asset URL. Assets are deduplicated by URL. This includes downloadable files (PDFs, documents, videos) -- any file referenced in the source content needs to be migrated as a Prismic asset. For link fields that point to downloadable files, migrate the file as an asset and use a Prismic media link instead of a web URL.
+- **Slice zones**: if the type has a slice zone, decompose source content into the correct ordered array of typed slices matching the Prismic slice models. If source content does not fit any available slice, do NOT force it into an unrelated slice. Instead, raise this as a model gap.
+- **Locale handling**: if the source content has multiple locales, produce one Prismic document per locale. Master locale documents must be created first (the runner handles ordering, but the converter must output all locale variants).

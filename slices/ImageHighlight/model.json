@@ -1,0 +1,33 @@
+{
+  "id": "ImageHighlight",
+  "type": "SharedSlice",
+  "name": "Image highlight",
+  "description": "",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "docURL": "",
+      "version": "initial",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image"
+          }
+        },
+        "caption": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Caption",
+            "multi": "paragraph,strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

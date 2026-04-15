@@ -1,0 +1,73 @@
+{
+  "id": "SportsGrid",
+  "type": "SharedSlice",
+  "name": "Sports grid",
+  "description": "Grid of sport cards with accent bar",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "docURL": "",
+      "version": "initial",
+      "imageUrl": "",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow"
+          }
+        },
+        "title_white": {
+          "type": "Text",
+          "config": {
+            "label": "Title (white)"
+          }
+        },
+        "title_gold": {
+          "type": "Text",
+          "config": {
+            "label": "Title (gold)"
+          }
+        },
+        "section_id": {
+          "type": "Text",
+          "config": {
+            "label": "Section anchor id",
+            "placeholder": "sports"
+          }
+        }
+      },
+      "items": {
+        "sport_name": {
+          "type": "Text",
+          "config": {
+            "label": "Sport name"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "multi": "paragraph,strong,em",
+            "allowTargetBlank": true
+          }
+        },
+        "category_badge": {
+          "type": "Text",
+          "config": {
+            "label": "Category badge"
+          }
+        },
+        "accent": {
+          "type": "Select",
+          "config": {
+            "label": "Accent bar",
+            "options": ["blue", "gold", "green"],
+            "default_value": "gold"
+          }
+        }
+      }
+    }
+  ]
+}

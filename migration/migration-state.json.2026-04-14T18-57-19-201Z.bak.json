@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "documents": {
+    "site_settings::__singleton__": {
+      "status": "ok",
+      "prismicId": "ad6LeRQAACIAcMPf"
+    },
+    "landing_page:fr-fr:accueil": {
+      "status": "ok",
+      "prismicId": "ad6LixQAACMAcMQA"
+    },
+    "landing_page:fr-fr:contact-fr": {
+      "status": "ok",
+      "prismicId": "ad6LiRQAACIAcMP7"
+    },
+    "article:en-gb:throwback-thursday-paris-gaels-2009-en": {
+      "status": "ok",
+      "prismicId": "ad6MHBQAACMAcMTh"
+    },
+    "article:en-gb:2021-09-28-home-hurling-camogie-tournament": {
+      "status": "ok",
+      "prismicId": "ad6MHhQAACMAcMTo"
+    }
+  },
+  "completedTypes": [],
+  "deferred": []
+}

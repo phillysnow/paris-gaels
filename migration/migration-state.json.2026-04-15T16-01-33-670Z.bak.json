@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "documents": {
+    "landing_page:fr-fr:accueil": {
+      "status": "ok",
+      "prismicId": "ad-1zRQAACEAcpOR"
+    },
+    "landing_page:en-gb:home": {
+      "status": "ok",
+      "prismicId": "ad-1zxQAACIAcpOX"
+    }
+  },
+  "completedTypes": [],
+  "deferred": []
+}

@@ -1,0 +1,73 @@
+{
+  "id": "StoryStats",
+  "type": "SharedSlice",
+  "name": "Story & stats",
+  "description": "Eyebrow, split headline, intro, and stat cards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "docURL": "",
+      "version": "initial",
+      "imageUrl": "",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow"
+          }
+        },
+        "title_lead": {
+          "type": "Text",
+          "config": {
+            "label": "Title (white)"
+          }
+        },
+        "title_highlight": {
+          "type": "Text",
+          "config": {
+            "label": "Title highlight (gold)"
+          }
+        },
+        "intro": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Intro",
+            "multi": "paragraph,strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        },
+        "section_id": {
+          "type": "Text",
+          "config": {
+            "label": "Section anchor id",
+            "placeholder": "about"
+          }
+        }
+      },
+      "items": {
+        "icon": {
+          "type": "Select",
+          "config": {
+            "label": "Icon",
+            "options": ["calendar", "globe", "users", "trophy"],
+            "default_value": "calendar"
+          }
+        },
+        "stat_value": {
+          "type": "Text",
+          "config": {
+            "label": "Value"
+          }
+        },
+        "stat_label": {
+          "type": "Text",
+          "config": {
+            "label": "Label"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "CallToAction",
+  "type": "SharedSlice",
+  "name": "Call to action",
+  "description": "",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "docURL": "",
+      "version": "initial",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "multi": "paragraph,strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        },
+        "cta": {
+          "type": "Link",
+          "config": {
+            "label": "Calls to action",
+            "allowText": true,
+            "allowTargetBlank": true,
+            "repeat": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

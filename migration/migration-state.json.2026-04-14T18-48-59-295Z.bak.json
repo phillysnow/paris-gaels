@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "documents": {
+    "site_settings::__singleton__": {
+      "status": "ok",
+      "prismicId": "ad6LeRQAACIAcMPf"
+    },
+    "landing_page:fr-fr:accueil": {
+      "status": "ok",
+      "prismicId": "ad6LixQAACMAcMQA"
+    },
+    "landing_page:fr-fr:contact-fr": {
+      "status": "ok",
+      "prismicId": "ad6LiRQAACIAcMP7"
+    }
+  },
+  "completedTypes": [],
+  "deferred": []
+}

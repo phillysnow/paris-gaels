@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "documents": {
+    "site_settings::__singleton__": {
+      "status": "ok",
+      "prismicId": "ad-l7hQAACIAcnco"
+    },
+    "landing_page:en-gb:contact-en": {
+      "status": "ok",
+      "prismicId": "ad-mDRQAACEAcnd2"
+    },
+    "landing_page:fr-fr:contact-fr": {
+      "status": "ok",
+      "prismicId": "ad-mBxQAACAAcndi"
+    },
+    "landing_page:en-gb:training": {
+      "status": "ok",
+      "prismicId": "ad-mDxQAACEAcnd8"
+    },
+    "landing_page:fr-fr:entrainements": {
+      "status": "ok",
+      "prismicId": "ad-mBRQAACAAcndZ"
+    },
+    "landing_page:fr-fr:plan-du-site": {
+      "status": "ok",
+      "prismicId": "ad-mAxQAACEAcndT"
+    },
+    "landing_page:en-gb:club-calendar": {
+      "status": "ok",
+      "prismicId": "ad-mERQAACIAcneF"
+    },
+    "landing_page:fr-fr:calendrier": {
+      "status": "ok",
+      "prismicId": "ad-mARQAACEAcndM"
+    },
+    "article:en-gb:throwback-thursday-paris-gaels-2009-en": {
+      "status": "ok",
+      "prismicId": "ad-mxhQAACEAcnlN"
+    },
+    "article:fr-fr:throwback-thursday-paris-gaels-2009-en-2": {
+      "status": "ok",
+      "prismicId": "ad-mxBQAACAAcnlF"
+    },
+    "article:en-gb:throwback-thursday-tournament-hosted-by-niort-gaels-in-bressuire-in-may-2011": {
+      "status": "ok",
+      "prismicId": "ad-myBQAACEAcnlV"
+    },
+    "article:fr-fr:throwback-thursday-tournament-organise-par-les-niort-gaels-a-bressuire-en-mai-2011": {
+      "status": "ok",
+      "prismicId": "ad-mwhQAACIAcnk_"
+    },
+    "article:en-gb:2021-09-28-home-hurling-camogie-tournament": {
+      "status": "ok",
+      "prismicId": "ad-myhQAACAAcnle"
+    },
+    "article:fr-fr:2021-09-28-tournoi-hurling-camogie-domicile": {
+      "status": "ok",
+      "prismicId": "ad-mwBQAACMAcnk3"
+    },
+    "article:en-gb:club-planning-from-monday-4-to-sunday-10-september-2023": {
+      "status": "ok",
+      "prismicId": "ad-mzRQAACAAcnln"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-4-au-10-septembre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mvhQAACAAcnky"
+    },
+    "article:en-gb:club-planning-from-monday-11-to-sunday-17-september-2023": {
+      "status": "ok",
+      "prismicId": "ad-mzxQAACMAcnlt"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-11-au-17-septembre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mvBQAACIAcnkr"
+    },
+    "article:en-gb:club-planning-from-monday-18-to-sunday-24-september-2023": {
+      "status": "ok",
+      "prismicId": "ad-m0RQAACEAcnl2"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-18-au-24-septembre-2023": {
+      "status": "ok",
+      "prismicId": "ad-muhQAACIAcnkk"
+    },
+    "article:en-gb:club-planning-from-monday-25-september-to-sunday-1rst-october-2023": {
+      "status": "ok",
+      "prismicId": "ad-m0xQAACMAcnl9"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-25-septembre-au-1er-octobre-2023": {
+      "status": "ok",
+      "prismicId": "ad-muBQAACMAcnke"
+    },
+    "article:en-gb:club-planning-from-monday-2-october-to-sunday-8-october-2023": {
+      "status": "ok",
+      "prismicId": "ad-m1RQAACEAcnmF"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-2-au-8-octobre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mthQAACAAcnkX"
+    },
+    "article:en-gb:club-planning-from-monday-9-october-to-sunday-15-october-2023": {
+      "status": "ok",
+      "prismicId": "ad-m1xQAACEAcnmL"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-9-au-dimanche-15-octobre-2023": {
+      "status": "ok",
+      "prismicId": "ad-msxQAACAAcnkR"
+    },
+    "article:en-gb:club-planning-from-monday-16-october-to-sunday-22-october-2023": {
+      "status": "ok",
+      "prismicId": "ad-m2RQAACIAcnmT"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-16-au-dimanche-22-octobre-2023": {
+      "status": "ok",
+      "prismicId": "ad-msRQAACIAcnkL"
+    },
+    "article:en-gb:club-planning-from-monday-23-october-to-sunday-29-october-2023": {
+      "status": "ok",
+      "prismicId": "ad-m2xQAACAAcnmY"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-23-au-dimanche-29-octobre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mrxQAACMAcnkE"
+    },
+    "article:en-gb:club-planning-from-monday-30-october-to-sunday-5-november-2023": {
+      "status": "ok",
+      "prismicId": "ad-m3hQAACAAcnmg"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-30-au-dimanche-3-novembre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mrRQAACAAcnj8"
+    },
+    "article:en-gb:club-planning-from-monday-6-november-to-sunday-12-november-2023": {
+      "status": "ok",
+      "prismicId": "ad-m4BQAACMAcnmo"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-6-novembre-au-dimanche-12-novembre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mqxQAACEAcnj0"
+    },
+    "article:en-gb:club-planning-from-monday-13-november-to-sunday-19-november-2023": {
+      "status": "ok",
+      "prismicId": "ad-m4hQAACIAcnmt"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-13-novembre-au-dimanche-19-novembre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mqRQAACAAcnjv"
+    },
+    "article:en-gb:club-planning-from-monday-20-november-to-sunday-26-november-2023": {
+      "status": "ok",
+      "prismicId": "ad-m5BQAACAAcnm0"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-20-novembre-au-26-novembre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mpxQAACEAcnjk"
+    },
+    "article:en-gb:club-planning-from-monday-27-november-to-sunday-3-december-2023": {
+      "status": "ok",
+      "prismicId": "ad-m5hQAACIAcnm6"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-27-novembre-au-dimanche-3-decembre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mpBQAACAAcnje"
+    },
+    "article:en-gb:club-planning-from-monday-4-december-to-sunday-10-december-2023": {
+      "status": "ok",
+      "prismicId": "ad-m6BQAACIAcnm_"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-4-decembre-au-dimanche-10-decembre-2023": {
+      "status": "ok",
+      "prismicId": "ad-mohQAACEAcnjZ"
+    },
+    "article:en-gb:club-planning-from-monday-8-january-to-sunday-14-january-2024": {
+      "status": "ok",
+      "prismicId": "ad-m6hQAACEAcnnH"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-8-janvier-au-dimanche-14-janvier-2024": {
+      "status": "ok",
+      "prismicId": "ad-moBQAACIAcnjS"
+    },
+    "article:en-gb:club-planning-from-monday-15-january-to-sunday-21-january-2024": {
+      "status": "ok",
+      "prismicId": "ad-m7BQAACAAcnnP"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-15-janvier-au-dimanche-21-janvier-2024": {
+      "status": "ok",
+      "prismicId": "ad-mnhQAACAAcnjN"
+    },
+    "article:en-gb:club-planning-from-monday-11-march-to-sunday-17-march-2024": {
+      "status": "ok",
+      "prismicId": "ad-m7hQAACEAcnnW"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-11-mars-au-dimanche-17-mars-2024": {
+      "status": "ok",
+      "prismicId": "ad-mnBQAACEAcnjG"
+    },
+    "article:en-gb:club-planning-from-monday-4-march-to-sunday-10-march-2024": {
+      "status": "ok",
+      "prismicId": "ad-m8BQAACMAcnnc"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-4-mars-au-dimanche-10-mars-2024": {
+      "status": "ok",
+      "prismicId": "ad-mmhQAACMAcnjA"
+    },
+    "article:en-gb:club-planning-from-monday-12-february-to-sunday-18-february-2024": {
+      "status": "ok",
+      "prismicId": "ad-m8hQAACEAcnnj"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-12-fevrier-au-dimanche-18-fevrier-2024": {
+      "status": "ok",
+      "prismicId": "ad-mlhQAACIAcni3"
+    },
+    "article:en-gb:club-planning-from-monday-19-february-to-sunday-25-february-2024": {
+      "status": "ok",
+      "prismicId": "ad-m9BQAACMAcnnp"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-19-fevrier-au-dimanche-25-fevrier-2024": {
+      "status": "ok",
+      "prismicId": "ad-mlBQAACAAcnix"
+    },
+    "article:en-gb:club-planning-from-monday-5-february-to-sunday-11-february-2024": {
+      "status": "ok",
+      "prismicId": "ad-m9hQAACIAcnnu"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-5-fevrier-au-dimanche-11-fevrier-2024": {
+      "status": "ok",
+      "prismicId": "ad-mkhQAACMAcnip"
+    },
+    "article:en-gb:club-planning-from-monday-22-january-to-sunday-28-january-2024": {
+      "status": "ok",
+      "prismicId": "ad-m-BQAACAAcnn1"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-22-janvier-au-dimanche-28-janvier-2024": {
+      "status": "ok",
+      "prismicId": "ad-mkBQAACAAcnij"
+    },
+    "article:en-gb:club-planning-from-monday-29-january-to-sunday-4-february-2024": {
+      "status": "ok",
+      "prismicId": "ad-m-hQAACEAcnn7"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-29-janvier-au-dimanche-4-fevrier-2024": {
+      "status": "ok",
+      "prismicId": "ad-mjhQAACMAcnie"
+    },
+    "article:en-gb:club-planning-from-monday-18-march-to-sunday-24-march-2024": {
+      "status": "ok",
+      "prismicId": "ad-m_BQAACMAcnoC"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-18-mars-au-dimanche-24-mars-2024": {
+      "status": "ok",
+      "prismicId": "ad-mjBQAACIAcniX"
+    },
+    "article:en-gb:club-planning-from-monday-25-march-to-sunday-31-march-2024": {
+      "status": "ok",
+      "prismicId": "ad-m_hQAACAAcnoI"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-25-mars-au-dimanche-31-mars-2024": {
+      "status": "ok",
+      "prismicId": "ad-mihQAACAAcniS"
+    },
+    "article:en-gb:club-planning-from-monday-1-april-to-sunday-7-april-2024": {
+      "status": "ok",
+      "prismicId": "ad-nARQAACAAcnoO"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-1er-avril-au-dimanche-7-avril-2024": {
+      "status": "ok",
+      "prismicId": "ad-miBQAACIAcniI"
+    },
+    "article:en-gb:club-planning-from-monday-2-september-to-sunday-8-september-2024": {
+      "status": "ok",
+      "prismicId": "ad-nAxQAACAAcnoW"
+    },
+    "article:fr-fr:planning-du-club-pour-la-semaine-du-lundi-2-septembre-au-dimanche-9-septembre-2024": {
+      "status": "ok",
+      "prismicId": "ad-mhhQAACAAcniC"
+    }
+  },
+  "completedTypes": [
+    "site_settings",
+    "landing_page",
+    "article"
+  ],
+  "deferred": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "TrainingLocations",
+  "type": "SharedSlice",
+  "name": "Training locations",
+  "description": "Where and when training happens",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "docURL": "",
+      "version": "initial",
+      "imageUrl": "",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow"
+          }
+        },
+        "title_gold": {
+          "type": "Text",
+          "config": {
+            "label": "Title (gold)"
+          }
+        },
+        "title_white": {
+          "type": "Text",
+          "config": {
+            "label": "Title (white)"
+          }
+        },
+        "intro": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Intro",
+            "multi": "paragraph,strong,em",
+            "allowTargetBlank": true
+          }
+        },
+        "section_id": {
+          "type": "Text",
+          "config": {
+            "label": "Section anchor id",
+            "placeholder": "training"
+          }
+        }
+      },
+      "items": {
+        "venue_name": {
+          "type": "Text",
+          "config": {
+            "label": "Venue name"
+          }
+        },
+        "sports_line": {
+          "type": "Text",
+          "config": {
+            "label": "Sports (subtitle)"
+          }
+        },
+        "address": {
+          "type": "Text",
+          "config": {
+            "label": "Address"
+          }
+        },
+        "transport": {
+          "type": "Text",
+          "config": {
+            "label": "Public transport"
+          }
+        },
+        "schedule": {
+          "type": "Text",
+          "config": {
+            "label": "Schedule"
+          }
+        }
+      }
+    }
+  ]
+}

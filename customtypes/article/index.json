@@ -1,0 +1,86 @@
+{
+  "id": "article",
+  "label": "Article",
+  "repeatable": true,
+  "status": true,
+  "format": "page",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID",
+          "placeholder": ""
+        }
+      },
+      "publication_date": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Publication date"
+        }
+      },
+      "featured_image": {
+        "type": "Image",
+        "config": {
+          "label": "Featured image"
+        }
+      },
+      "excerpt": {
+        "type": "Text",
+        "config": {
+          "label": "Excerpt"
+        }
+      },
+      "translation_group_id": {
+        "type": "Text",
+        "config": {
+          "label": "Translation group id"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "TextBlock": {
+              "type": "SharedSlice"
+            },
+            "ImageHighlight": {
+              "type": "SharedSlice"
+            },
+            "CallToAction": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        }
+      },
+      "meta_image": {
+        "type": "Image",
+        "config": {
+          "label": "Meta Image",
+          "constraint": {
+            "width": 2400,
+            "height": 1260
+          },
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

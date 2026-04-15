@@ -1,0 +1,52 @@
+{
+  "id": "site_settings",
+  "label": "Site settings",
+  "repeatable": false,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "club_tagline": {
+        "type": "Text",
+        "config": {
+          "label": "Club tagline"
+        }
+      },
+      "header_banner": {
+        "type": "Image",
+        "config": {
+          "label": "Header banner image"
+        }
+      }
+    },
+    "Navigation": {
+      "primary_navigation": {
+        "type": "Link",
+        "config": {
+          "label": "Primary navigation",
+          "allowText": true,
+          "allowTargetBlank": true,
+          "repeat": true
+        }
+      },
+      "social_links": {
+        "type": "Link",
+        "config": {
+          "label": "Social and external links",
+          "allowText": true,
+          "allowTargetBlank": true,
+          "repeat": true
+        }
+      },
+      "footer_links": {
+        "type": "Link",
+        "config": {
+          "label": "Footer links",
+          "allowText": true,
+          "allowTargetBlank": true,
+          "repeat": true
+        }
+      }
+    }
+  }
+}

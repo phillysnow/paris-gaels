@@ -1,0 +1,40 @@
+{
+	"name": "agentic-migration-starter",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"prismic": "npx prismic",
+		"slicemachine": "start-slicemachine",
+		"typegen": "prismic codegen types",
+		"seed:home": "node --import tsx ./scripts/seed-home-onepager.ts"
+	},
+	"devDependencies": {
+		"@prismicio/client": "^7.21.8",
+		"@prismicio/migrate": "^0.0.2",
+		"@slicemachine/adapter-next": "^0.3.95",
+		"@tailwindcss/typography": "^0.5.19",
+		"@types/node": "^22.10.0",
+		"@types/react": "^19.0.0",
+		"@types/react-dom": "^19.0.0",
+		"autoprefixer": "^10.5.0",
+		"fast-xml-parser": "^5.5.12",
+		"postcss": "^8.5.9",
+		"prismic": "npm:@angeloashmore/prismic-cli-poc@canary",
+		"slice-machine-ui": "^2.21.2",
+		"tailwindcss": "^3.4.19",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3",
+		"vitest": "^4.1.0"
+	},
+	"dependencies": {
+		"@prismicio/next": "^2.2.4",
+		"@prismicio/react": "^3.4.1",
+		"next": "^15.1.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	}
+}

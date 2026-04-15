@@ -1,0 +1,27 @@
+{
+  "id": "TextBlock",
+  "type": "SharedSlice",
+  "name": "Text block",
+  "description": "",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "docURL": "",
+      "version": "initial",
+      "imageUrl": "",
+      "primary": {
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body",
+            "multi": "paragraph,heading2,heading3,strong,em,hyperlink,list-item,o-list-item,image,embed",
+            "allowTargetBlank": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

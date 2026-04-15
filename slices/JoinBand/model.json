@@ -1,0 +1,60 @@
+{
+  "id": "JoinBand",
+  "type": "SharedSlice",
+  "name": "Join band",
+  "description": "Get involved CTA with contact link",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "docURL": "",
+      "version": "initial",
+      "imageUrl": "",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow"
+          }
+        },
+        "title_gold": {
+          "type": "Text",
+          "config": {
+            "label": "Title (gold)"
+          }
+        },
+        "title_white": {
+          "type": "Text",
+          "config": {
+            "label": "Title (white)"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "multi": "paragraph,strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        },
+        "contact_link": {
+          "type": "Link",
+          "config": {
+            "label": "Contact / primary button",
+            "allowText": true,
+            "allowTargetBlank": true
+          }
+        },
+        "section_id": {
+          "type": "Text",
+          "config": {
+            "label": "Section anchor id",
+            "placeholder": "join"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
