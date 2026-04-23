@@ -5,6 +5,8 @@
 @layer base {
 	html {
 		scroll-behavior: smooth;
+		/* Explicit light scheme — avoids Firefox/Android treating the page as dark-themed and skewing backgrounds/UI chrome */
+		color-scheme: light;
 	}
 
 	::selection {

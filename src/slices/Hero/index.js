@@ -22,6 +22,7 @@ export default function Hero({ slice, context: _ctx }) {
 						className="object-cover"
 						sizes="100vw"
 						priority
+						loader={null}
 					/>
 					<div className="absolute inset-0 bg-gradient-to-b from-pg-royal/85 via-pg-ink/88 to-pg-deep/95" />
 				</div>
