@@ -114,9 +114,8 @@ function imageHighlightSlice(args: {
 
 function callToActionSlice(lang: HomeLang): LandingSlice {
 	const en = lang === "en-gb";
-	const base = en ? "/en" : "";
-	const calendarUrl = en ? `${base}/club-calendar` : "/calendrier";
-	const trainingUrl = en ? `${base}/training` : "/entrainements";
+	const calendarUrl = en ? "/en/club-calendar" : "/fr/calendrier";
+	const trainingUrl = en ? "/en/training" : "/fr/entrainements";
 	return {
 		id: `CallToAction$${randomUUID()}`,
 		slice_type: "CallToAction",

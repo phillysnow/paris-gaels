@@ -18,7 +18,7 @@ import {
 	type Migration,
 } from "@prismicio/client";
 import type { AllDocumentTypes } from "../prismicio-types.js";
-import { createClient } from "../prismicio.js";
+import { createClient } from "../src/prismicio.js";
 import { buildOnePagerSeedSlices } from "./lib/onepagerSeedSlices.js";
 
 const rootDir = join(fileURLToPath(new URL(".", import.meta.url)), "..");
@@ -63,7 +63,9 @@ async function main(): Promise<void> {
 
 	for (const { uid, lang } of targets) {
 		const doc = await read.getByUID("landing_page", uid, { lang });
-		const hasHero = doc.data.slices.some((s) => s.slice_type === "Hero");
+		const hasHero = doc.data.slices.some(
+			(s: { slice_type: string }) => s.slice_type === "Hero",
+		);
 		if (hasHero && !force) {
 			console.log(`[${uid} ${lang}] skipped: Hero slice already exists (use --force).`);
 			continue;

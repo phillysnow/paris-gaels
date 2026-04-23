@@ -21,7 +21,7 @@ export function webLink(url: string, linkText: string) {
 /** Prepends a default one-pager stack (placeholders). Push slice models to Prismic before running. */
 export function buildOnePagerSeedSlices(lang: "fr-fr" | "en-gb"): LandingSlice[] {
 	const en = lang === "en-gb";
-	const base = en ? "/en" : "/";
+	const base = en ? "/en" : "/fr";
 
 	const hero: LandingSlice = {
 		id: `Hero$${randomUUID()}`,
