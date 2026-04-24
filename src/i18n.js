@@ -40,6 +40,21 @@ export function rewriteLocaleInPath(path) {
   }
 }
 
+/**
+ * Prismic's `url` for documents uses repository locale ids in the path (`/en-gb/...`).
+ * The Next app only serves short segments (`/en/...`). Use this for card links, same as
+ * `getLocales`.
+ *
+ * @param {string | null | undefined} url
+ * @returns {string}
+ */
+export function prismicDocumentHrefForApp(url) {
+  if (!url || typeof url !== "string") return "#";
+  const rewritten = rewriteLocaleInPath(url);
+  if (!rewritten || typeof rewritten !== "string") return "#";
+  return rewritten;
+}
+
 function rewriteLocalePathname(pathname) {
   for (const [prismicLang, segment] of Object.entries(LOCALES)) {
     const re = new RegExp(`^/${escapeRegExp(prismicLang)}(?=/|$)`, "i");
@@ -132,4 +147,17 @@ export function reverseLocaleLookup(locale) {
       return key;
     }
   }
+}
+
+/**
+ * `lang` in Content API queries must be a repository locale id (e.g. en-gb), not the public
+ * path segment (en). Accepts either when resolving from slice `context.lang`.
+ *
+ * @param {string | null | undefined} raw
+ * @returns {string | undefined}
+ */
+export function prismicLocaleForQuery(raw) {
+  if (raw == null || raw === "") return undefined;
+  if (raw === "en-gb" || raw === "fr-fr") return raw;
+  return reverseLocaleLookup(String(raw).toLowerCase());
 }

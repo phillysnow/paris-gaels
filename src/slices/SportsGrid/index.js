@@ -5,8 +5,7 @@ import { sliceSectionSurfaceClass } from "@/lib/sliceSurface";
 
 const accentBar = {
 	blue: "bg-pg-royal",
-	gold: "bg-pg-red",
-	green: "bg-pg-green",
+	red: "bg-pg-red",
 };
 
 export default function SportsGrid({ slice, context: _ctx, index, slices }) {
@@ -34,7 +33,7 @@ export default function SportsGrid({ slice, context: _ctx, index, slices }) {
 
 			<div className="mx-auto mt-14 grid max-w-content gap-6 md:grid-cols-2">
 				{items.map((item, i) => {
-					const bar = accentBar[item.accent ?? "gold"] ?? accentBar.gold;
+					const bar = accentBar[item.accent ?? "red"] ?? accentBar.red;
 					return (
 						<article
 							key={i}

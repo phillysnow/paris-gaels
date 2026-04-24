@@ -154,6 +154,7 @@ export function buildOnePagerSeedSlices(lang: "fr-fr" | "en-gb"): LandingSlice[]
 			title_white: en ? "Club " : "Actus ",
 			title_gold: en ? "News" : "club",
 			section_id: "news",
+			view_all_label: en ? "View all news" : "Toutes les actualités",
 		},
 		items: [],
 	} as unknown as LandingSlice;

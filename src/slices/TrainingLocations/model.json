@@ -76,6 +76,17 @@
           "config": {
             "label": "Schedule"
           }
+        },
+        "maps_link": {
+          "type": "Link",
+          "config": {
+            "label": "Maps Link",
+            "placeholder": "Add the Google map link here",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
         }
       }
     }

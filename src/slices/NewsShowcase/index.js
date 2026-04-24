@@ -1,6 +1,17 @@
 import { isFilled } from "@prismicio/client";
 import Link from "next/link";
 import { PrismicLink } from "@prismicio/react";
+import {
+	CardInner,
+	CardShell,
+	formatArticleDate,
+	newsCardClassName,
+} from "@/components/NewsArticleCard";
+import {
+	prismicDocumentHrefForApp,
+	prismicLocaleForQuery,
+	urlSegmentForPrismicLang,
+} from "@/i18n";
 import { createClient } from "@/prismicio";
 import { sectionIdFromKeyText } from "@/lib/section-id";
 import { sliceSectionSurfaceClass } from "@/lib/sliceSurface";
@@ -21,69 +32,18 @@ function SectionHeader({ eyebrow, title_white, title_gold }) {
 	);
 }
 
-function CardShell({ href, children }) {
-	const className =
-		"block overflow-hidden rounded-xl border border-pg-card-border bg-pg-card text-left shadow-sm shadow-black/5 transition hover:border-pg-red/45 hover:shadow-md";
-	if (href.startsWith("/")) {
-		return <Link href={href} className={className}>{children}</Link>;
-	}
-	return (
-		<a href={href} className={className}>
-			{children}
-		</a>
-	);
-}
-
-function CardInner({ category, date_display, headline, summary }) {
-	return (
-		<>
-			<div
-				className="h-1 w-full rounded-full bg-gradient-to-r from-pg-royal to-pg-red"
-				aria-hidden
-			/>
-			<div className="p-6">
-				<div className="mb-4 flex items-center justify-between gap-2">
-					{category ? (
-						<span className="rounded-full bg-pg-red px-3 py-1 text-xs font-bold text-white">
-							{category}
-						</span>
-					) : (
-						<span />
-					)}
-					{date_display ? (
-						<span className="text-xs text-pg-muted">{date_display}</span>
-					) : null}
-				</div>
-				{headline ? (
-					<h3 className="font-display text-lg font-bold text-pg-ink">{headline}</h3>
-				) : null}
-				{summary ? (
-					<p className="mt-3 text-sm leading-relaxed text-pg-muted">{summary}</p>
-				) : null}
-			</div>
-		</>
-	);
-}
-
-function formatArticleDate(d) {
-	const raw = d.data.publication_date;
-	if (!raw) return "";
-	try {
-		return new Intl.DateTimeFormat(d.lang === "en-gb" ? "en-GB" : "fr-FR", {
-			day: "numeric",
-			month: "short",
-			year: "numeric",
-		}).format(new Date(raw));
-	} catch {
-		return raw;
-	}
-}
+const viewAllLabelFallback = {
+	en: "View all news",
+	fr: "Toutes les actualités",
+};
 
 export default async function NewsShowcase({ slice, context, index, slices }) {
 	const { primary, items } = slice;
 	const anchor = sectionIdFromKeyText(primary.section_id, "news");
-	const lang = context.lang;
-	const useLatest = primary.feed !== "manual";
+	const lang = prismicLocaleForQuery(context.lang) ?? context.lang;
+	// Manual with no cards: fall back to latest articles (EN often left on "manual" with 0 items).
+	const manualCount = Array.isArray(items) ? items.length : 0;
+	const useLatest = primary.feed !== "manual" || manualCount === 0;
 	const surface = sliceSectionSurfaceClass(slice.slice_type, index, slices);
 
 	const eyebrow = isFilled.keyText(primary.eyebrow) ? primary.eyebrow : null;
@@ -94,18 +54,23 @@ export default async function NewsShowcase({ slice, context, index, slices }) {
 
 	if (useLatest) {
 		const client = createClient();
-		const articles = await client.getAllByType("article", {
+		const { results: articles = [] } = await client.getByType("article", {
 			lang,
+			page: 1,
 			pageSize: 3,
 			orderings: [{ field: "document.first_publication_date", direction: "desc" }],
 		});
+		const segment = urlSegmentForPrismicLang(lang);
+		const viewAllText = isFilled.keyText(primary.view_all_label)
+			? primary.view_all_label.trim()
+			: (viewAllLabelFallback[segment] ?? viewAllLabelFallback.en);
 
 		return (
 			<section id={anchor} className={sectionClass}>
 				<SectionHeader eyebrow={eyebrow} title_white={title_white} title_gold={title_gold} />
 				<ul className="mx-auto mt-14 grid max-w-content gap-8 md:grid-cols-3">
 					{articles.map((article) => {
-						const href = article.url ?? "#";
+						const href = prismicDocumentHrefForApp(article.url);
 						const title = article.data.meta_title?.trim() || article.uid;
 						const summary = article.data.excerpt?.trim() || null;
 						const dateStr = formatArticleDate(article);
@@ -125,12 +90,19 @@ export default async function NewsShowcase({ slice, context, index, slices }) {
 						);
 					})}
 				</ul>
+				{segment ? (
+					<div className="mx-auto mt-12 flex max-w-content justify-center">
+						<Link
+							href={`/${segment}/news`}
+							className="inline-flex min-h-12 min-w-[12rem] items-center justify-center rounded-md bg-pg-red px-8 py-3 font-display text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-pg-red/35 transition hover:bg-red-600"
+						>
+							{viewAllText}
+						</Link>
+					</div>
+				) : null}
 			</section>
 		);
 	}
-
-	const cardClass =
-		"block overflow-hidden rounded-xl border border-pg-card-border bg-pg-card text-left shadow-sm shadow-black/5 transition hover:border-pg-red/45 hover:shadow-md";
 
 	return (
 		<section id={anchor} className={sectionClass}>
@@ -145,7 +117,7 @@ export default async function NewsShowcase({ slice, context, index, slices }) {
 					return (
 						<li key={i}>
 							{isFilled.link(item.link) ? (
-								<PrismicLink field={item.link} className={cardClass}>
+								<PrismicLink field={item.link} className={newsCardClassName}>
 									<div>
 										<CardInner
 											category={category}
@@ -156,7 +128,7 @@ export default async function NewsShowcase({ slice, context, index, slices }) {
 									</div>
 								</PrismicLink>
 							) : (
-								<div className={cardClass}>
+								<div className={newsCardClassName}>
 									<CardInner
 										category={category}
 										date_display={date_display}

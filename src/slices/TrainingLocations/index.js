@@ -1,5 +1,6 @@
 import { isFilled } from "@prismicio/client";
-import { PrismicRichText } from "@prismicio/react";
+import { PrismicLink, PrismicRichText } from "@prismicio/react";
+import { newsCardClassName } from "@/components/NewsArticleCard";
 import { sectionIdFromKeyText } from "@/lib/section-id";
 import { sliceSectionSurfaceClass } from "@/lib/sliceSurface";
 
@@ -39,6 +40,10 @@ function Row({ icon, children }) {
 	);
 }
 
+/** Base shell when there is no maps link (same as news cards, without hover). */
+const venueCardClassStatic =
+	"block overflow-hidden rounded-xl border border-pg-card-border bg-pg-card p-8 text-left shadow-sm shadow-black/5";
+
 export default function TrainingLocations({ slice, context: _ctx, index, slices }) {
 	const { primary, items } = slice;
 	const anchor = sectionIdFromKeyText(primary.section_id, "training");
@@ -68,34 +73,45 @@ export default function TrainingLocations({ slice, context: _ctx, index, slices 
 			</div>
 
 			<div className="mx-auto mt-14 grid max-w-content gap-8 md:grid-cols-2">
-				{items.map((item, i) => (
-					<article
-						key={i}
-						className="rounded-xl border border-pg-card-border bg-pg-card p-8 text-left shadow-sm shadow-black/5"
-					>
-						{isFilled.keyText(item.venue_name) ? (
-							<h3 className="font-display text-2xl font-bold text-pg-ink">{item.venue_name}</h3>
-						) : null}
-						{isFilled.keyText(item.sports_line) ? (
-							<p className="mt-2 font-display text-sm font-semibold text-pg-red">{item.sports_line}</p>
-						) : null}
-						{isFilled.keyText(item.address) ? (
-							<Row icon="pin">
-								<p>{item.address}</p>
-							</Row>
-						) : null}
-						{isFilled.keyText(item.transport) ? (
-							<Row icon="train">
-								<p>{item.transport}</p>
-							</Row>
-						) : null}
-						{isFilled.keyText(item.schedule) ? (
-							<Row icon="clock">
-								<p>{item.schedule}</p>
-							</Row>
-						) : null}
-					</article>
-				))}
+				{items.map((item, i) => {
+					const inner = (
+						<>
+							{isFilled.keyText(item.venue_name) ? (
+								<h3 className="font-display text-2xl font-bold text-pg-ink">{item.venue_name}</h3>
+							) : null}
+							{isFilled.keyText(item.sports_line) ? (
+								<p className="mt-2 font-display text-sm font-semibold text-pg-red">{item.sports_line}</p>
+							) : null}
+							{isFilled.keyText(item.address) ? (
+								<Row icon="pin">
+									<p>{item.address}</p>
+								</Row>
+							) : null}
+							{isFilled.keyText(item.transport) ? (
+								<Row icon="train">
+									<p>{item.transport}</p>
+								</Row>
+							) : null}
+							{isFilled.keyText(item.schedule) ? (
+								<Row icon="clock">
+									<p>{item.schedule}</p>
+								</Row>
+							) : null}
+						</>
+					);
+					if (isFilled.link(item.maps_link)) {
+						return (
+							<PrismicLink key={i} field={item.maps_link} className={`${newsCardClassName} p-8`}>
+								{inner}
+							</PrismicLink>
+						);
+					}
+					return (
+						<article key={i} className={venueCardClassStatic}>
+							{inner}
+						</article>
+					);
+				})}
 			</div>
 		</section>
 	);

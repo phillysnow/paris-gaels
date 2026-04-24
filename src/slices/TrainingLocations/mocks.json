@@ -1,0 +1,98 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrow": {
+				"__TYPE__": "FieldContent",
+				"value": "enter",
+				"type": "Text"
+			},
+			"title_gold": {
+				"__TYPE__": "FieldContent",
+				"value": "independent",
+				"type": "Text"
+			},
+			"title_white": {
+				"__TYPE__": "FieldContent",
+				"value": "remember",
+				"type": "Text"
+			},
+			"intro": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Non elit ut aliqua laboris labore aliqua dolore ut veniam ipsum duis velit laboris labore."
+						}
+					}
+				]
+			},
+			"section_id": {
+				"__TYPE__": "FieldContent",
+				"value": "statement",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"venue_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "caught",
+							"type": "Text"
+						}
+					],
+					[
+						"sports_line",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "tool",
+							"type": "Text"
+						}
+					],
+					[
+						"address",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "job",
+							"type": "Text"
+						}
+					],
+					[
+						"transport",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "check",
+							"type": "Text"
+						}
+					],
+					[
+						"schedule",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "plastic",
+							"type": "Text"
+						}
+					],
+					[
+						"maps_link",
+						{
+							"__TYPE__": "LinkContent",
+							"key": "12ec60c9-7f7c-46d6-8380-e37ac72e095b",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io",
+								"text": "avoid"
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+]

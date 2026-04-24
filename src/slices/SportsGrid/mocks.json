@@ -1,0 +1,73 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrow": {
+				"__TYPE__": "FieldContent",
+				"value": "surface",
+				"type": "Text"
+			},
+			"title_white": {
+				"__TYPE__": "FieldContent",
+				"value": "pleasure",
+				"type": "Text"
+			},
+			"title_gold": {
+				"__TYPE__": "FieldContent",
+				"value": "bent",
+				"type": "Text"
+			},
+			"section_id": {
+				"__TYPE__": "FieldContent",
+				"value": "stick",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"sport_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "lot",
+							"type": "Text"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Consequat aliquip occaecat do. Enim id dolor occaecat."
+									}
+								}
+							]
+						}
+					],
+					[
+						"category_badge",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "brain",
+							"type": "Text"
+						}
+					],
+					[
+						"accent",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "blue",
+							"type": "Select"
+						}
+					]
+				]
+			}
+		]
+	}
+]

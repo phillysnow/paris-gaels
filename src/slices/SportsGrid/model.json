@@ -21,13 +21,15 @@
         "title_white": {
           "type": "Text",
           "config": {
-            "label": "Title (white)"
+            "label": "Title",
+            "placeholder": ""
           }
         },
         "title_gold": {
           "type": "Text",
           "config": {
-            "label": "Title (gold)"
+            "label": "Title",
+            "placeholder": ""
           }
         },
         "section_id": {
@@ -63,8 +65,12 @@
           "type": "Select",
           "config": {
             "label": "Accent bar",
-            "options": ["blue", "gold", "green"],
-            "default_value": "gold"
+            "placeholder": "",
+            "options": [
+              "blue",
+              "red"
+            ],
+            "default_value": "blue"
           }
         }
       }

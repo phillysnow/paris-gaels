@@ -13,33 +13,6 @@
           "placeholder": ""
         }
       },
-      "page_kind": {
-        "type": "Select",
-        "config": {
-          "label": "Page kind",
-          "options": [
-            "home",
-            "training",
-            "calendar",
-            "contact",
-            "sitemap",
-            "other"
-          ]
-        }
-      },
-      "featured_image": {
-        "type": "Image",
-        "config": {
-          "label": "Featured image"
-        }
-      },
-      "translation_group_id": {
-        "type": "Text",
-        "config": {
-          "label": "Translation group id",
-          "placeholder": "Polylang pll_* group slug from WordPress"
-        }
-      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
