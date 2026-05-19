@@ -7,6 +7,8 @@
 		scroll-behavior: smooth;
 		/* Explicit light scheme — avoids Firefox/Android treating the page as dark-themed and skewing backgrounds/UI chrome */
 		color-scheme: light;
+		/* Fixed header overlap for in-page #anchors */
+		scroll-padding-top: 6rem;
 	}
 
 	::selection {
